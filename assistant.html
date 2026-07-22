@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Assistant | ElderCare AI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            ElderCare AI
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assistant.html">Voice Assistant</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Title -->
+
+    <section class="page-title">
+
+        <h1>🎤 AI Voice Assistant</h1>
+
+        <p>
+            Talk naturally with ElderCare AI for reminders,
+            health tips, and daily assistance.
+        </p>
+
+    </section>
+
+    <!-- Chat Box -->
+
+    <div class="chat-box">
+
+        <div class="message ai">
+            👋 Hello! I am ElderCare AI. How can I help you today?
+        </div>
+
+        <div class="message user">
+            Remind me to take my medicine at 8 PM.
+        </div>
+
+        <div class="message ai">
+            ✅ Sure! I will remind you today at 8:00 PM.
+        </div>
+
+        <input type="text" placeholder="Type your message here...">
+
+        <button onclick="sendMessage()">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send
+        </button>
+
+        <button onclick="startVoice()">
+            <i class="fa-solid fa-microphone"></i>
+            Start Voice
+        </button>
+
+    </div>
+
+    <!-- Features -->
+
+    <section class="cards">
+
+        <div class="card">
+            <i class="fa-solid fa-language"></i>
+            <h3>Multilingual</h3>
+            <p>Supports multiple languages for easy communication.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-bell"></i>
+            <h3>Smart Reminders</h3>
+            <p>Medicine and appointment reminder assistance.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Health Advice</h3>
+            <p>Provides simple health guidance and wellness tips.</p>
+        </div>
+
+    </section>
+
+   
+
+    <footer>
+
+        © 2026 ElderCare AI | Voice Assistant
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

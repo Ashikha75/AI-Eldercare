@@ -1,0 +1,334 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+    color:#333;
+}
+
+/* Navbar */
+
+nav{
+    background:#1976d2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD54F;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 8%;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:#1976d2;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+.hero img{
+    width:420px;
+    max-width:100%;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#1976d2;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1259a7;
+}
+
+/* Page Title */
+
+.page-title{
+    text-align:center;
+    padding:40px 20px 20px;
+}
+
+.page-title h1{
+    color:#1976d2;
+    font-size:40px;
+}
+
+.page-title p{
+    color:#666;
+    margin-top:10px;
+}
+
+/* Cards */
+
+.cards{
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1976d2;
+    margin:15px 0;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+.card i{
+    font-size:45px;
+    color:#1976d2;
+}
+
+/* Chat Box */
+
+.chat-box{
+    width:90%;
+    max-width:800px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.message{
+    margin:15px 0;
+    padding:12px;
+    border-radius:10px;
+}
+
+.ai{
+    background:#e3f2fd;
+}
+
+.user{
+    background:#1976d2;
+    color:white;
+    text-align:right;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+button{
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin-top:15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1259a7;
+}
+
+/* Medicine Table */
+
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+}
+
+table th{
+    background:#1976d2;
+    color:white;
+}
+
+/* Health Progress */
+
+.progress{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.progress div{
+    height:12px;
+    background:#1976d2;
+    border-radius:10px;
+}
+
+/* SOS Button */
+
+.sos-btn{
+    display:block;
+    margin:40px auto;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:red;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+}
+
+.sos-btn:hover{
+    background:#b30000;
+}
+
+/* Profile */
+
+.profile{
+    width:90%;
+    max-width:500px;
+    margin:40px auto;
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.profile img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.profile h2{
+    color:#1976d2;
+}
+
+.profile p{
+    margin:8px 0;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:#1976d2;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.page-title h1{
+    font-size:32px;
+}
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:400px;
+}
+}
